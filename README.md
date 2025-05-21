@@ -44,7 +44,7 @@ Kad mēs savācam datus, mēs tos sakārtojam tā, lai datoram būtu viegli tos 
     * Mūsu kodā tas ir mainīgais `filmas`. Mēs sākam ar tukšu sarakstu un pakāpeniski pievienojam jaunas filmas.
 
 2.  **Vārdnīca (`dictionary`)**:
-    * Iedomājieties to kā vizītkarti par katru filmu. Katrai vizītkartei ir sava "vietas" (piemēram, "Nosaukums", "Gads", "Reitings") un tām atbilstošās vērtības (piemēram, "Šūšankas glābšana", "1994", "9.3").
+    * Iedomājieties to kā vizītkarti par katru filmu. Katrai vizītkartei ir sava "vietas" (piemēram, "Nosaukums", "Gads", "Reitings") un tām atbilstošās vērtības (piemēram, "shawshank redemption", "1994", "9.3").
     * Mūsu kodā katra atsevišķa filma tiek saglabāta kā vārdnīca, kurā mēs paši esam izdomājuši atslēgas (piemēram, "Nosaukums", "Gads", "Reitings"), lai skaidri pateiktu, kas ir kas.
 
 Tātad, mēs galu galā iegūstam "sarakstu ar vārdnīcām" – katra vārdnīca ir viena filma ar tās detaļām, un visas šīs filmas ir saliktas lielā sarakstā.
