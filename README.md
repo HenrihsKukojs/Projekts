@@ -35,10 +35,6 @@ Mūsu kods izmanto dažas gatavas Python programmu daļas (mēs tās saucam par 
     * **Ko dara:** Šī daļa ļauj mūsu programmai "runāt" ar datora operētājsistēmu (piemēram, Windows, macOS, Linux).
     * **Kāpēc:** Mēs to izmantojam, lai izveidotu īpašu mapi (`dati`), kurā tiks saglabāts mūsu JSON fails. Tā arī palīdz pareizi atrast ceļu līdz šim failam neatkarīgi no tā, kādu operētājsistēmu jūs izmantojat.
 
-5.  **`time` (laikam)**:
-    * **Ko dara:** Šī daļa palīdz mums apturēt programmu uz brīdi (uz dažām sekundēm).
-    * **Kāpēc:** Lai gan jūsu kodā to pašlaik nelieto, tīmekļa datu vākšanā bieži vien ir labi starp katru lapas ielādi nedaudz pagaidīt. Tas palīdz, lai serveris mūs neuzskatītu par pārāk "ātriem" robotiem un nebloķētu mūsu pieprasījumus.
-
 ## Kā dati tiek sakārtoti (Pašu definētās datu struktūras)
 
 Kad mēs savācam datus, mēs tos sakārtojam tā, lai datoram būtu viegli tos saprast un apstrādāt. Mēs izmantojam divus galvenos veidus, kā datus uzglabāt:
