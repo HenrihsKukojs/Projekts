@@ -1,5 +1,5 @@
 # Projekts
-# IMDb Filmu Datu Vācējs (Latviskots)
+# IMDb Filmu Datu Vācējs
 
 Šis ir vienkāršs Python kods, kas palīdz savākt (ielādēt) informāciju par labākajām 250 filmām no IMDb mājaslapas. Programma mēģina iegūt filmas nosaukumu, tās iznākšanas gadu un to, kāds reitings filmai ir dots. Iegūtos datus saglabājam īpašā failā, ko sauc par JSON failu.
 
