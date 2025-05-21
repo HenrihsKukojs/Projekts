@@ -30,17 +30,22 @@ def skrapet_imdb_top250_filmas():
         try:
             virsraksta_tags = ieraksts.find("h3", class_="ipc-title__text")
             nosaukums = virsraksta_tags.get_text(strip=True).split('.', 1)[-1].strip() if virsraksta_tags else "Nezināms nosaukums"
-
-            info_tagi = ieraksts.find_all("span", class_="sc-b0901df4-7") 
             
             gads = "Nav gada"
             reitings = "Nav reitinga"
 
-            if len(info_tagi) >= 1:
-                gada_teksts = info_tagi[0].get_text(strip=True)
-                if gada_teksts.isdigit() and len(gada_teksts) == 4:
-                    gads = gada_teksts
+            metadatu_bloks = ieraksts.find("div", class_="cli-title-metadata")
             
+            if metadatu_bloks:
+                visi_span_elementi_metadatos = metadatu_bloks.find_all("span")
+                
+                if visi_span_elementi_metadatos:
+                    for span_elem in visi_span_elementi_metadatos:
+                        gada_teksts_kandidats = span_elem.get_text(strip=True)
+                        if gada_teksts_kandidats.isdigit() and len(gada_teksts_kandidats) == 4:
+                            gads = gada_teksts_kandidats
+                            break 
+
             reitinga_bloks = ieraksts.find("span", class_="ipc-rating-star--rating")
             if reitinga_bloks:
                  reitings = reitinga_bloks.get_text(strip=True).split('(')[0].strip()
